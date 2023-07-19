@@ -1,5 +1,5 @@
 .parte01 {
-  background: linear-gradient(180deg, rgba(174, 224, 198, 0.774) 48.25%, rgba(117, 190, 133, 0.4524) 54.2%, rgba(233, 242, 235, 0.87) 94.06%, rgba(196, 224, 202, 0.87) 104.78%, rgba(112, 113, 118, 0.2871) 109.52%, rgba(72, 230, 106, 0.87) 114.3%, rgba(0, 0, 0, 0.1044) 120.84%);
+  background: linear-gradient(180deg, rgba(174, 224, 198, 0.774) 48.25%, rgba(199, 243, 232, 0.466) 54.2%, rgba(141, 153, 144, 0.685) 94.06%, rgba(165, 173, 167, 0.918) 104.78%, rgba(140, 141, 146, 0.287) 109.52%, rgba(122, 130, 131, 0.637) 114.3%, rgba(0, 0, 0, 0.1044) 120.84%);
   width: 100%;
   height: 100%;
   background-color: #85969F;
@@ -26,30 +26,44 @@
 .box-header1 {
   width: 100%;
   text-align: center;
-  font-family: dosis;
-  color: #FFDE59;
+  font-family: roboto;
+  color: #d3b012;
   font-size: 35px;
-  font-weight:lighter;
+  font-weight: lighter;
   text-shadow: 
                -1px -1px 0px #0e0e0e, 
                -1px 1px 0px #000000,      
                 1px -1px 0px #0e0d0d,    
                 1px 0px 0px #0c0c0c;
-  
-  
 }
+
 .box-header2 {
-  width: 100%;
-  text-align: center;
+  color: #775c37;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: dosis;
-  color: rgb(219, 169, 43);
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 28px;
+  min-height: 60px;
+}
+
+.box-header3 {
+  color: #775c37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: dosis;
+  font-weight: bold;
   font-size: 25px;
-  text-shadow: 
-               -1px -1px 0px #0e0e0e, 
-               -1px 1px 0px #000000,      
-                1px -1px 0px #0e0d0d,    
-                1px 0px 0px #0c0c0c;
-  
+  line-height: 30px;
+  text-align: center;
+  padding: 0 10%;
+  margin-top: 0;
+  max-width: 500px;
 }
 
 .box-content {
@@ -67,34 +81,32 @@
   height: auto;
 }
 
-.box-text1{
+.box-text1 {
   color: #020202;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Dosis';
+  font-family: roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-
 }
-.box-text2{
+
+.box-text2 {
   color: #775c37;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   font-family: dosis;
-  font-style:oblique;
+  font-style: oblique;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   padding-left: 15%;
-  
-  
-
+  margin-left: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -106,7 +118,6 @@
   .box-image {
     margin-top: 0;
     margin-left: 10px;
-  
   }
 
   .box-content .box-text {
@@ -116,4 +127,54 @@
   .box-content .box-image.align-left {
     order: -1;
   }
+}
+
+.noticias-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.noticia-card {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.noticia-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.noticia-card h2 {
+  margin: 10px 0;
+}
+
+.noticia-card p {
+  font-size: 14px;
+  color: #3b3939;
+}
+
+@media (max-width: 767px) {
+  .noticias-container {
+    flex-wrap: wrap;
+  }
+
+  .noticia-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.rodape {
+  background-color: #141414;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: roboto;
+}
+
+.texto-rodape {
+  text-align: center;
 }
